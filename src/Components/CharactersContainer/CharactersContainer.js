@@ -13,7 +13,7 @@ const CharactersContainer = ({filtered}) => {
     )
   })
   return (
-    <div className='character=container'>
+    <div className='character-container'>
       {characterCards}
     </div>
   )
