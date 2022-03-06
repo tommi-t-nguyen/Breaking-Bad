@@ -17,6 +17,7 @@ const SearchBar = ({characters}) => {
     setFilterCharacters(find)
   }
   return (
+    <>
     <section className='search'>
       <form>
         <input
@@ -28,9 +29,9 @@ const SearchBar = ({characters}) => {
           autoFocus
         />
       </form>
-      <CharactersContainer filtered ={filterCharacters}/>
     </section>
-
+    <CharactersContainer filtered ={filterCharacters}/>
+    </>
   )
 }
 
