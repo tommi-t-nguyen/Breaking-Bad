@@ -1,5 +1,6 @@
 import React from 'react';
 import CharactersCard from '../CharactersCard/CharactersCard.js'
+import './CharactersContainer.css'
 
 const CharactersContainer = ({filtered}) => {
   const characterCards = filtered.map((character, key) => {
@@ -13,7 +14,7 @@ const CharactersContainer = ({filtered}) => {
     )
   })
   return (
-    <div className='character-container'>
+    <div className='characters-container'>
       {characterCards}
     </div>
   )

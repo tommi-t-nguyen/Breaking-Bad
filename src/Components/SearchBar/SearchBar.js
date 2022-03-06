@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CharactersContainer from '../CharactersContainer/CharactersContainer.js';
 import Loading from '../Loading/Loading.js';
+import './SearchBar.css';
 
 const SearchBar = ({characters}) => {
   const [filter, setFilter] = useState('')
@@ -29,9 +30,8 @@ const SearchBar = ({characters}) => {
           placeholder='Search characters...'
           value={filter}
           onChange={(event) => setFilter(event.target.value)}
-          autoFocus
         />
-      <input type="submit" onClick={(event) => handleChange(event)}/>
+      <input className='submit'type="submit" onClick={(event) => handleChange(event)}/>
       </form>
     </section>
     {!firstLoad ? (<CharactersContainer filtered ={characters}/>):(<CharactersContainer filtered ={filterCharacters}/>)}

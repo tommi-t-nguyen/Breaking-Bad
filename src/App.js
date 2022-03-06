@@ -2,7 +2,8 @@ import React from 'react';
 import Home from './Pages/Home/Home.js';
 import Error from './Pages/Error/Error.js';
 import Detail from './Pages/Detail/Detail.js';
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom';
+import './App.css';
 
 const App = () => {
   return (
@@ -13,9 +14,9 @@ const App = () => {
           render={() => <Home/>}
         />
         <Route
-          exact path='/characters/:name'
+          exact path='/characters/:id'
           render={({match}) =>
-          <Detail /> }
+          <Detail id={match.params.id}/> }
         />
         <Route path='/error' component={Error}/>
         <Redirect to='/error'/>
