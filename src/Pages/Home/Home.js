@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
     <Nav />
-    {!characters ? (<Loading />) :(<SearchBar characters={characters} />)}
+    {!characters ? (<Loading />) : (<SearchBar characters={characters} />)}
     <Footer />
    </>
   )
