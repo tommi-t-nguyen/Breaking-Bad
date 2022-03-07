@@ -28,9 +28,8 @@
 ### Techologies Used
 
 
-- React
-- JavaScript
-- HTML
+- React hooks
+- CSS
 - Cypress
 
 
