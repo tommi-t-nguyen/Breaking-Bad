@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import PropTypes from 'prop-types';
 import { fetchSingle } from '../../apiCalls.js';
 import { NavLink } from 'react-router-dom';
 import './Detail.css';
@@ -34,4 +35,7 @@ const Detail = ({ id }) => {
   )
 }
 
-export default Detail
+export default Detail;
+Detail.propTypes = {
+  id: PropTypes.string.isRequired
+};
