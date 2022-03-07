@@ -5,6 +5,7 @@ import SearchBar from '../../Components/SearchBar/SearchBar.js';
 import Footer from '../../Components/Footer/Footer.js';
 import Loading from '../../Components/Loading/Loading.js';
 
+
 const Home = () => {
   const [characters, setCharacters] = useState('');
 
@@ -16,7 +17,7 @@ const Home = () => {
   return (
     <>
     <Nav />
-    {!characters ? (<Loading />) :(<SearchBar characters={characters} />)}
+    {!characters ? (<Loading />) : (<SearchBar characters={characters} />)}
     <Footer />
    </>
   )
