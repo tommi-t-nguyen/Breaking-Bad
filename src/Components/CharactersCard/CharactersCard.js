@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './CharactersCard.css';
 import { NavLink} from 'react-router-dom'
 
@@ -13,4 +14,10 @@ const CharactersCard = ({name, img, id}) => {
   )
 }
 
-export default CharactersCard
+export default CharactersCard;
+
+CharactersCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired
+};

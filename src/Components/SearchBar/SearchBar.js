@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import CharactersContainer from '../CharactersContainer/CharactersContainer.js';
 import Loading from '../Loading/Loading.js';
 import './SearchBar.css';
@@ -39,4 +40,8 @@ const SearchBar = ({characters}) => {
   )
 }
 
-export default SearchBar
+export default SearchBar;
+
+SearchBar.propTypes = {
+  characters: PropTypes.array.isRequired
+};
