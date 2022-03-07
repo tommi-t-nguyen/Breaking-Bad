@@ -3,4 +3,5 @@ body {
   background: #000 url('images/background.jpeg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
+  width:100%;
 }

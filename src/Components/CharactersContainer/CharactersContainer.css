@@ -4,3 +4,11 @@
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
+@media only screen and (max-width: 600px){
+  .characters-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+  }
+}

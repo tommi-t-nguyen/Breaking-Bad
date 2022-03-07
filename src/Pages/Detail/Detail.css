@@ -4,15 +4,16 @@
   margin-top: 25px;
 }
 .char-image {
-  width:40%;
+  width:40vw;
 }
 
 .character-info{
+  width:40vw;
   font-size: 25px;
   display: flex;
   flex-direction: column;
 }
 
 .home:hover {
-  cursor: pointer;  
+  cursor: pointer;
 }

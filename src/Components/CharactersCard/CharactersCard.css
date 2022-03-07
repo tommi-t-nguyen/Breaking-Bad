@@ -1,8 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
+  width: 18vw;
 }
 
 .character-image {
@@ -19,4 +19,13 @@ transition: all .2s ease-in-out;
 
 .grow:hover {
 transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px){
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+  }
 }
