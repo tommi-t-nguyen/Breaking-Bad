@@ -7,7 +7,7 @@ const Error = () => {
     <div className="error">
 				<h1>We're Experiencing Technical Difficulties</h1>
 				<p>Sorry for any inconvenience. Please try again.</p>
-				<p><Link to="/">Back to Home</Link></p>
+				<Link to="/">Back to Home</Link>
 		</div>
   )
 }

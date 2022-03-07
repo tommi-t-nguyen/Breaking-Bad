@@ -8,11 +8,12 @@ import Loading from '../../Components/Loading/Loading.js';
 
 const Home = () => {
   const [characters, setCharacters] = useState('');
+  const [error,setError] = useState(false);
 
   useEffect(()=> {
     fetchAll()
       .then(data => setCharacters(data))
-      .catch(error => console.log(error))
+      .catch(error => setError(true))
   }, []);
   return (
     <>
